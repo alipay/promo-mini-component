@@ -1,0 +1,14 @@
+node_modules
+Thumbs.db
+es
+dist
+.DS_Store
+.tea
+.vscode
+.entry
+.tea
+.cache
+*.lock
+*.log
+.idea
+.project
