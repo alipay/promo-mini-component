@@ -1,0 +1,20 @@
+<view class="fruit-slots {{class}}">
+    <view class="lt-item-list" style="width:{{width}}rpx;height:{{width}}rpx">
+        <block a:for="{{prizeList}}">
+            <view
+              key="{{index}}"
+              class="lt-item {{index === activeIndex ? 'lt-active' : ''}}"
+              style="width:{{itemWidth}}rpx;height:{{itemWidth}}rpx;margin:{{margin}}rpx 0 0 {{margin}}rpx"
+            >
+                <image src="{{item.icon}}" mode="widthFix" style="width:100%" />
+            </view>
+            <view
+              key="btn"
+              a:if="{{index==3}}"
+              class="lt-item lt-button {{disabled ? 'disabled' : (isRolling ? 'pause' : '')}}"
+              style="width:{{itemWidth}}rpx;height:{{itemWidth}}rpx;margin:{{margin}}rpx 0 0 {{margin}}rpx"
+              onTap="start"
+            />
+        </block>
+    </view>
+</view>

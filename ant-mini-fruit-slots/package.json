@@ -1,0 +1,22 @@
+{
+  "name": "ant-mini-fruit-slots",
+  "version": "1.0.3",
+  "description": "支付宝小程序大转盘组件",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "九宫格",
+    "抽奖",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  },
+  "license": "ISC"
+}

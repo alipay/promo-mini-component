@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "fruit-slots": "../fruit-slots/index"
+  }
+}
