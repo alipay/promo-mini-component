@@ -1,0 +1,14 @@
+<view class="scratch-wrap" style="width:{{width}}px;height:{{height}}px">
+  <view class="result-info">
+      <view a:if="{{resultText}}">{{resultText}}</view>
+      <view a:else><slot/></view>
+  </view>
+  <canvas
+    id="{{id}}"
+    class="scratch-canvas {{animationClass}}"
+    catchTouchStart="onTouchStart"
+    catchTouchMove="onTouchMove"
+    catchTouchEnd="onTouchEnd"
+    style="width:{{width * pr}}px;height:{{height * pr}}px"
+  />
+</view>

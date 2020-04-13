@@ -1,0 +1,24 @@
+{
+  "name": "ant-mini-scratch-card",
+  "version": "1.0.8",
+  "description": "支付宝小程序刮刮卡组件",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "刮刮卡",
+    "canvas",
+    "scratch",
+    "ant-mini",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  },
+  "license": "ISC"
+}

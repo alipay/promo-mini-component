@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "src/demo/index"
+  ],
+  "window": {
+    "defaultTitle": "刮刮卡玩法小程序",
+    "enableWK": "YES",
+    "enableDSL": true
+  }
+}

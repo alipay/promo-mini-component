@@ -1,0 +1,15 @@
+<view class="container">
+  <scratch
+    tipText="刮刮我，有惊喜~"
+    tipColor="#902d02"
+    coverColor="#ffae8a"
+    ctxLogoUrl="https://gw.alipayobjects.com/zos/rmsportal/iGLmHkSxYfXveGhuzzFf.png"
+    resultText=''
+    autoFadeOut=true
+    onFinish="onFinish"
+  >
+    <view class="result">
+      <text>{{result}}</text>
+    </view>
+  </scratch>
+</view>

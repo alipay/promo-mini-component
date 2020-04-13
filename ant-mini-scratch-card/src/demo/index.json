@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "刮刮卡玩法",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "scratch": "../scratch/index"
+  }
+}
