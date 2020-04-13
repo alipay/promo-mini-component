@@ -1,0 +1,7 @@
+<view class="eggs-container">
+  <hiteggs
+    onStart="onStart"
+    onFinish="onFinish"
+    disabled="{{disabled}}"
+  />
+</view>

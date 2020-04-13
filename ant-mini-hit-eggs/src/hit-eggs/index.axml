@@ -1,0 +1,31 @@
+<view class="eggs-container {{className}} {{isSmashing ? 'smashing' : ''}}">
+    <view class="eggs" style="width:{{eggWidth*eggCol}}rpx">
+        <view a:for="{{list}}">
+            <view
+              class="egg {{activeIndex === index ? 'jumping' : ''}}"
+              style="width:{{eggWidth}}rpx;height:{{eggWidth}}rpx;margin-top:{{eggMarginTop}}rpx"
+              key="{{index}}"
+            >
+                <view a:if="{{item===STATE_STILL}}">
+                    <image src="{{eggIcon}}" mode="widthFix" style="width:100%"/>
+                </view>
+                <view a:elif="{{item===STATE_BROKEN}}">
+                    <image src="{{smashedIcon}}" mode="widthFix" style="width:100%"/>
+                </view>
+                <view a:elif="{{item===STATE_JUMPING}}" onTap="onHiting">
+                    <image src="{{jumpIcon}}" mode="widthFix" style="width:100%;margin-top:-10%"/>
+                </view>
+                <view a:else>
+                    <image src="{{redBagIcon}}" mode="widthFix" style="width:100%;"/>
+                </view>
+            </view>
+
+        </view>
+    </view>
+    <view
+      class="hammer {{hammerMace ? 'mace' : ''}}"
+      style="top:{{hammerPosY || hammerOriginY}}rpx;right:{{hammerPosX || hammerOriginX}}rpx"
+    >
+        <image src="{{hammerIcon}}" mode="widthFix" style="width:{{hammerWidth}}rpx"/>
+    </view>
+</view>

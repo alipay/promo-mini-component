@@ -1,0 +1,23 @@
+{
+  "name": "ant-mini-hit-eggs",
+  "version": "1.0.2",
+  "description": "支付宝小程序砸金蛋组件",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "砸金蛋",
+    "打地鼠",
+    "抽奖",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  },
+  "license": "ISC"
+}

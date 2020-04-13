@@ -1,0 +1,40 @@
+.eggs-container {
+  position: relative;
+  width: 100%;
+}
+
+.eggs-container .hammer {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 1;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.eggs-container .mace {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.eggs-container .eggs {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.eggs-container .eggs .egg {
+  float: left;
+}
+
+.eggs-container .eggs,
+.eggs-container .eggs .egg {
+  position: relative;
+}
+
+.eggs-container .hammer,
+.eggs-container .eggs .egg {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
