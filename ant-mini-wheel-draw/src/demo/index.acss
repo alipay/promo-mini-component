@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+    margin: 20px auto;
+}
+.times {
+    padding: 10px;
+}
+.result {
+    padding: 10px;
+    font-size: 18px;
+    color: #ff6868;
+}

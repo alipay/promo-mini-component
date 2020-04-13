@@ -1,0 +1,24 @@
+{
+  "name": "ant-mini-wheel-draw",
+  "version": "1.0.1",
+  "description": "支付宝小程序大转盘抽奖组件",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "转盘",
+    "抽奖",
+    "wheel",
+    "ant-mini",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js"
+  },
+  "license": "ISC"
+}

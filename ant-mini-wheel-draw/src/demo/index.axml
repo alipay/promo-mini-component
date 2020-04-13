@@ -1,0 +1,19 @@
+<view class="container">
+  <wheel
+    width="22em"
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName}}"
+    rotTimes="{{totalTimes}}"
+    onStart="onStart"
+    onFinish="onFinish"
+    onTimesUp="onTimesUp"
+  />
+  <view class="times">
+    <text>你还有{{totalTimes - curTimes}}次抽奖机会</text>
+  </view>
+  
+  <view class="result">
+    <text>{{result}}</text>
+  </view>
+  
+</view>

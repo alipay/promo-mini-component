@@ -1,0 +1,20 @@
+<view class="wheel-container" style="width:{{width}};height:{{width}}">
+    <view
+        class="wheel-list"
+        style="background: url('{{bgImg}}') 0% 0% / 100% 100% no-repeat;transform:rotate({{degValue || initDeg}}deg)"
+    >
+      <view a:for="{{prizeList}}" a:for-index="i">
+          <view class="wheel-item">
+              <view
+                class="wheel-img"
+                style="width:{{prizeWidth}};padding-top:{{prizePaddingTop}};transform:rotate({{(i+0.5)/6}}turn);{{itemTransformOrigin}}"
+              >
+                  <image src="{{item.img}}" mode="widthFix" style="width:100%;height:auto"/>
+              </view>
+          </view>
+      </view>
+    </view>
+    <view class="wheel-btn" >
+        <image src="{{btnImg}}" mode="widthFix" class="img" onTap="start"/>
+    </view>
+</view>
