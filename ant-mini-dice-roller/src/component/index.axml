@@ -1,0 +1,16 @@
+<view class="diceroller-ctr">
+  <view class="canvas-ctr">
+    <canvas
+      id="canvas"
+      class="canvas"
+      width="{{width}}"
+      height="{{height}}"
+      style="width: {{width}}rpx; height: {{height}}rpx;"
+    />
+  </view>
+  <view onTap="onStart">
+    <slot name="button">
+      <text>摇一摇</text>
+    </slot>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+{
+  "name": "ant-mini-dice-roller",
+  "version": "1.0.3",
+  "description": "支付宝小程序摇骰子",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "摇骰子",
+    "抽奖",
+    "mini-program"
+  ],
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "npm run build && npm publish"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "src/demo/index"
+  ],
+  "window": {
+    "defaultTitle": "摇骰子"
+  }
+}
