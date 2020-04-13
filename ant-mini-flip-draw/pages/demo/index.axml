@@ -1,0 +1,34 @@
+<view class="container">
+  <view class='tip-text'>3张卡牌，翻一次：{{tipText3}}</view>
+  <flipdraw
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName}}"
+    cardHeight="312"
+    cardNum="3"
+    cardBgImg="https://gw.alicdn.com/tfs/TB1IxILXHvpK1RjSZPiXXbmwXXa-241-359.png"
+    isDrawing="{{isDrawing3}}"
+    flipAllCards="{{flipAllCards3}}"
+    onFlipStart="onFlipStart3"
+  />
+  <view class='tip-text'>6张卡牌，翻一次：{{tipText6}}</view>
+  <flipdraw
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName}}"
+    cardHeight="305"
+    cardNum="6"
+    cardBgImg="https://gw.alicdn.com/tfs/TB1GDsLXMHqK1RjSZFPXXcwapXa-428-622.png"
+    isDrawing="{{isDrawing6}}"
+    flipAllCards="{{flipAllCards6}}"
+    onFlipStart="onFlipStart6"
+  />
+  <view class='tip-text'>9张卡牌，翻多次：{{tipText9}}</view>
+  <flipdraw
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName}}"
+    cardHeight="206"
+    cardBgImg="https://gw.alicdn.com/tfs/TB1P.AMXMHqK1RjSZJnXXbNLpXa-610-600.png"
+    isDrawing="{{isDrawing9}}"
+    flipAllCards="{{flipAllCards9}}"
+    onFlipStart="onFlipStart9"
+  />
+</view>

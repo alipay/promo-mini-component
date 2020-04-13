@@ -1,0 +1,21 @@
+{
+  "name": "ant-mini-flip-draw",
+  "version": "1.0.2",
+  "description": "支付宝小程序翻牌抽奖",
+  "files": [
+    "component"
+  ],
+  "keywords": [
+    "支付宝",
+    "小程序",
+    "翻牌子",
+    "抽奖",
+    "mini-program"
+  ],
+  "scripts": {
+    "dev": "npm run dev:web & npm run dev:ios",
+    "dev:web": "appx start web",
+    "dev:ios": "appx run web ios"
+  },
+  "license": "ISC"
+}

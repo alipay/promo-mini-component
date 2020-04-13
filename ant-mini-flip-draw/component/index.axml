@@ -1,0 +1,16 @@
+<view class="flipdraw-component">
+  <view class="lt-item-list">
+    <block a:for="{{cardList}}">
+      <view
+        key="{{index}}"
+        class="lt-item"
+        onTap="onFlipStart"
+        data-idx="{{index}}"
+        animation="{{item.animation}}"
+        style="height:{{cardHeight}}rpx;"
+      >
+        <image class="card-img" src="{{item.icon}}" mode="aspectFit" style="{{item.imgStyle}}"/>
+      </view>
+    </block>
+  </view>
+</view>

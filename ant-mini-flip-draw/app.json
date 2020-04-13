@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/demo/index"
+  ],
+  "window": {
+    "defaultTitle": "Demo",
+    "enableWK": "YES",
+    "enableDSL": true
+  }
+}

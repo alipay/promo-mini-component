@@ -1,0 +1,26 @@
+.lt-item-list {
+  padding: 20rpx 0 0 20rpx;
+  margin: 20rpx;
+  width: 710rpx;
+  box-sizing: border-box;
+  clear: both;
+  overflow: hidden;
+}
+
+.lt-item {
+  float: left;
+  margin: 0 20rpx 20rpx 0;
+  padding: 0;
+  width: 210rpx;
+  height: 210rpx;
+  background-repeat: no-repeat;
+  background-position: left top;
+  box-sizing: border-box;
+  border-radius: 12rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.card-img {
+  width: 100%;
+  background-position: center center;
+}
