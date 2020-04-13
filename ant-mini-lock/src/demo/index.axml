@@ -1,0 +1,12 @@
+<view class="container">
+  <lock 
+    canvasWidth="300" 
+    canvasHeight="300" 
+    drawColor="#3985ff" 
+    canvasId="canvasLock" 
+    chooseType="3"
+    titleColor="#000000"
+    titleText="绘制解锁图案"
+    onFinish="onFinish">
+  </lock>
+</view>

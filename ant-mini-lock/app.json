@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "src/demo/index"
+  ],
+  "window": {
+    "defaultTitle": "手势解锁小程序组件",
+    "enableWK": "YES",
+    "enableDSL": true
+  }
+}

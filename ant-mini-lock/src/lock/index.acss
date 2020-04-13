@@ -1,0 +1,41 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #330;
+  width: 750rpx;
+}
+
+.content-name {
+  color: #000;
+}
+
+.lock_wp{
+	margin: 15px auto;
+}
+
+.canvasLock{
+  display: block;
+  margin: 0 auto;
+}
+
+.lock_title{
+	text-align: center;
+	color: #888;
+}
+
+.lock_reset{
+  margin: 0 auto;
+  width: 150px;	
+  font-size: 12px;
+  color: #888;
+}

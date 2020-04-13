@@ -4,7 +4,7 @@
 
 ### 安装组件
 ```
-yarn add @alipay/ant-mini-scratchCard
+yarn add ant-mini-scratch-card
 ```
 ### 使用示例
 **json**
@@ -13,7 +13,7 @@ yarn add @alipay/ant-mini-scratchCard
   "defaultTitle": "刮刮卡小程序组件",
   "allowsBounceVertical": "NO",
   "usingComponents": {
-    "scratch": "@alipay/ant-mini-scratchCard/es/scratch/index"
+    "scratch": "ant-mini-scratch-card/es/scratch/index"
   }
 }
 ```

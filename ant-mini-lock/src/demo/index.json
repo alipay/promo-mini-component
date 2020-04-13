@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "手势解锁玩法",
+  "allowsBounceVertical": "NO",
+  "usingComponents": {
+    "lock": "../lock/index"
+  }
+}

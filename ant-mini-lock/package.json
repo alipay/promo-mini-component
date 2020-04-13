@@ -1,0 +1,10 @@
+{
+  "name": "ant-mini-lock",
+  "version": "1.0.0",
+  "description": "小程序手势解锁",
+  "main": "src/lock/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
