@@ -22,4 +22,5 @@
 - [ant-mini-flip-draw](https://www.npmjs.com/package/ant-mini-flip-draw) 翻牌抽奖
 - [ant-mini-lock](https://www.npmjs.com/package/ant-mini-lock) 手势解锁
 
-如果你有好的意见或建议，欢迎给我们提issue；如果你有新的营销玩法创意组件，也欢迎入住，有可能成为官方支持的扩展组件哦！
+如果你有好的意见或建议，欢迎给我们提issue；
+如果你有新的营销玩法创意组件，也欢迎入驻，有可能成为官方支持的扩展组件哦！
