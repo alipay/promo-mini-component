@@ -3,7 +3,7 @@
 > 该仓库汇总了常用的支付宝营销玩法小程序组件，方便大家快速复用。
 
 # 使用说明
-使用文档见 [支付宝开放平台-营销组件介绍](https://opendocs.alipay.com/mini/00cfli)。
+使用文档见 [支付宝开放平台-营销组件介绍](https://opendocs.alipay.com/mini/component-ext/marketing-components)。
 
 当前已入住支付宝开发者中心代码市场，欢迎体验：https://openhome.alipay.com/platform/mas.htm#/home/comps
 
