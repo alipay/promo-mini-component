@@ -10,7 +10,7 @@ Page({
       'icon': 'https://zos.alipayobjects.com/rmsportal/nxpXbcNBOmbeIOVCUsuS.png'
       },
       {
-      'name': '1元红包',
+      'name': '1元红包-上',
       'icon': 'https://zos.alipayobjects.com/rmsportal/RxQruKQwiQCeYXhvwCfP.png'
       },
       {
@@ -22,7 +22,7 @@ Page({
       'icon': 'https://zos.alipayobjects.com/rmsportal/dexmbhnbsLRGIZGBqTcA.png'
       },
       {
-      'name': '1元红包',
+      'name': '1元红包-下',
       'icon': 'https://zos.alipayobjects.com/rmsportal/RxQruKQwiQCeYXhvwCfP.png'
       },
       {
@@ -35,24 +35,37 @@ Page({
       }
     ],
     prizeName: '5元红包',
+    prizeName2: '',
     disabled: false,
-    currentIndex: 4,
+    currentIndex: 5,
     tipText: '',
+    tipText2: '',
   },
   onStart() {
-    console.log('开始了');
     this.setData({
       tipText: '正在抽奖...'
     });
   },
   onFinish(index, name) {
-    console.log('结束了', index);
-    // this.setData({
-    //   disabled: true
-    // });
     this.setData({
-      currentIndex: Math.floor(Math.random() * 8),
       tipText: `抽奖结果：${name}`
+    });
+  },
+  onStart2() {
+    this.setData({
+      tipText2: '正在抽奖...',
+      prizeName2: '', // 由于一开始不确定奖品，需要置为空。
+    });
+    // 模拟请求，延迟中奖
+    setTimeout(() => {
+      this.setData({
+        prizeName2: '3元红包',
+      });
+    }, 3000);
+  },
+  onFinish2(index, name) {
+    this.setData({
+      tipText2: `抽奖结果：${name}`,
     });
   }
 });
