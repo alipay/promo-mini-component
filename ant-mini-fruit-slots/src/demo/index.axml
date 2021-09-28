@@ -1,4 +1,5 @@
 <view class="container">
+  <view>预抽奖模式（先请求拿到中奖结果再播放动画）：</view>
   <fruit-slots
     prizeList="{{prizeList}}"
     prizeName="{{prizeName}}"
@@ -8,4 +9,13 @@
     onFinish="onFinish"
   />
   <view class='tip-text'>{{tipText}}</view>
+  <view>实时抽奖模式（抽奖请求的同时播放抽奖动画）：</view>
+  <fruit-slots
+    mode="realtime"
+    prizeList="{{prizeList}}"
+    prizeName="{{prizeName2}}"
+    onStart="onStart2"
+    onFinish="onFinish2"
+  />
+  <view class='tip-text'>{{tipText2}}</view>
 </view>
