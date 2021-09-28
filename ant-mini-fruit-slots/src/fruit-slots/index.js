@@ -11,6 +11,7 @@ Component({
     prizeList: [], // 奖项列表，个数限定为8
     prizeName: '', // 获奖项名称
     rollTimes: 3, // 转动圈数
+    mode: 'pre', // 抽奖模式：pre(默认) | realtime
     currentIndex: 0, // 转动开始的下标
     speed: 100, // 转动速度, 单位 ms
     class: '', // 自定义类名
@@ -24,6 +25,19 @@ Component({
     this.setData({
       itemWidth: parseInt((this.props.width - 4 * this.props.margin) / 3)
     })
+  },
+  didUpdate(prevProps) {
+    const { mode, prizeName } = this.props;
+    if (mode === 'realtime' && prizeName && prevProps.prizeName !== prizeName) {
+      const prizeIndex = this.findPrizeIndex(prizeName);
+      if (prizeIndex === -1) {
+        console.error('请传入正确的获奖项name，其值必须存在于 prizeList name 字段中');
+        return;
+      }
+      // 总转动步数 = 默认圈数 x 奖品个数 + 结束位置索引 + 当前位置到一圈结束还剩下的步数
+      const activeIndex = this.currentStep % this.prizeLength;
+      this.totalSteps = 1 * this.prizeLength + this.currentStep + (this.prizeLength - activeIndex) + prizeIndex;
+    }
   },
   methods: {
     next(activeIndex) {
@@ -72,19 +86,24 @@ Component({
       return -1;
     },
     start() {
-      if (this.props.disabled || this.data.isRolling) return;
-      if (this.props.prizeList.length !== 8) {
-        throw new Error('奖品项列表 prizeList 长度不为8');
-      }
-      const activeIndex = +this.props.currentIndex || 0;
-      // 奖品项下标
-      const prizeIndex = this.findPrizeIndex(this.props.prizeName);
-      if (prizeIndex === -1) {
-        throw new Error('请传入正确的获奖项name，其值必须存在于 prizeList name 字段中');
-      }
-      // 总转动步数 = 默认圈数 x 奖品个数 + 结束位置索引 + 当前位置到一圈结束还剩下的步数
-      this.totalSteps = this.props.rollTimes * this.prizeLength + prizeIndex + (this.prizeLength - activeIndex);
       this.currentStep = 0;
+      const { disabled, prizeList, currentIndex, prizeName, mode } = this.props;
+      if (disabled || this.data.isRolling) return;
+      if (prizeList.length !== 8) {
+        console.error('奖品项列表 prizeList 长度不为8');
+      }
+      const activeIndex = +currentIndex || 0;
+      if (mode === 'realtime') {
+        this.totalSteps = Infinity;
+      } else {
+        // 奖品项下标
+        const prizeIndex = this.findPrizeIndex(prizeName);
+        if (prizeIndex === -1) {
+          console.error('请传入正确的获奖项name，其值必须存在于 prizeList name 字段中');
+        }
+        // 总转动步数 = 默认圈数 x 奖品个数 + 结束位置索引 + 当前位置到一圈结束还剩下的步数
+        this.totalSteps = this.props.rollTimes * this.prizeLength + prizeIndex + (this.prizeLength - activeIndex);
+      }
       this.setData({isRolling: true});
       this.next(activeIndex);
       this.props.onStart();
