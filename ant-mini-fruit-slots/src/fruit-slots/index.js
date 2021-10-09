@@ -86,9 +86,9 @@ Component({
       return -1;
     },
     start() {
-      this.currentStep = 0;
       const { disabled, prizeList, currentIndex, prizeName, mode } = this.props;
       if (disabled || this.data.isRolling) return;
+      this.currentStep = 0;
       if (prizeList.length !== 8) {
         console.error('奖品项列表 prizeList 长度不为8');
       }
